@@ -1,24 +1,56 @@
 <template>
   <div>
     <!-- Hero Section -->
-    <section class="hero-section">
-      <div class="container">
+    <section class="hero-section relative overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-blue-800/10"></div>
+      <div class="container relative z-10">
         <div class="hero-content text-center">
+          <div class="mb-6 flex justify-center gap-3 flex-wrap">
+            <span class="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-white text-sm font-medium animate-pulse" title="Mais de 150 projetos entregues com sucesso">
+              <i class="fas fa-trophy text-yellow-300 mr-2"></i>150+ Projetos Entregues
+            </span>
+            <span class="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-white text-sm font-medium" title="98% dos nossos clientes recomendam nossos serviços">
+              <i class="fas fa-heart text-red-300 mr-2"></i>98% Satisfação
+            </span>
+            <span class="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-white text-sm font-medium" title="Estamos no mercado há mais de 5 anos">
+              <i class="fas fa-certificate text-green-300 mr-2"></i>5+ Anos
+            </span>
+          </div>
+
           <h1 class="hero-title animate-fade-in">
-            Transforme seu negócio com
-            <span class="text-gradient">soluções digitais</span>
+            <i class="fas fa-rocket mr-3"></i>
+            Transforme Seu Negócio com
+            <span class="text-gradient block mt-2">Soluções Digitais de Alto Impacto</span>
           </h1>
           <p class="hero-subtitle animate-slide-up">
-            Especialistas em marketing digital, desenvolvimento web e soluções tecnológicas para impulsionar seus resultados
+            <i class="fas fa-chart-line mr-2"></i>
+            Especialistas em marketing digital, desenvolvimento web e soluções tecnológicas que <strong>realmente geram resultados</strong>
           </p>
-            <div class="hero-buttons animate-slide-up flex justify-center gap-4">
-            <router-link to="/contato" class="btn-primary">
-              Solicitar Orçamento
+
+          <div class="hero-buttons animate-slide-up flex flex-col sm:flex-row justify-center gap-4 mt-8">
+            <router-link
+              to="/contato"
+              class="btn-primary inline-flex items-center gap-2 shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all"
+              title="Solicite um orçamento gratuito agora"
+            >
+              <i class="fas fa-paper-plane"></i>
+              Solicitar Orçamento Gratuito
+              <i class="fas fa-arrow-right"></i>
             </router-link>
-            <router-link to="/servicos" class="btn-outline bg-white text-primary-600 hover:bg-primary-600 hover:text-white">
-              Nossos Serviços
+            <router-link
+              to="/servicos"
+              class="btn-outline bg-white text-primary-600 hover:bg-primary-600 hover:text-white inline-flex items-center gap-2 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all"
+              title="Conheça todos os nossos serviços"
+            >
+              <i class="fas fa-th-large"></i>
+              Conhecer Nossos Serviços
             </router-link>
-            </div>
+          </div>
+
+          <p class="mt-6 text-blue-100 text-sm">
+            <i class="fas fa-shield-alt mr-2"></i>
+            <strong>100% Seguro</strong> - Seus dados protegidos conforme LGPD
+          </p>
         </div>
       </div>
     </section>

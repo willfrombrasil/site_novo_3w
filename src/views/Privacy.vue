@@ -4,13 +4,17 @@
     <section class="page-hero">
       <div class="container">
         <div class="breadcrumb">
-          <router-link to="/">Home</router-link>
+          <router-link to="/"><i class="fas fa-home mr-1"></i>Home</router-link>
           <ChevronRightIcon class="w-4 h-4 breadcrumb-separator" />
-          <span>Política de Privacidade</span>
+          <span><i class="fas fa-shield-alt mr-1"></i>Política de Privacidade</span>
         </div>
-        <h1 class="page-hero-title">Política de Privacidade</h1>
+        <h1 class="page-hero-title">
+          <i class="fas fa-lock mr-3"></i>
+          Política de Privacidade
+        </h1>
         <p class="page-hero-subtitle">
-          Como coletamos, usamos e protegemos suas informações pessoais
+          <i class="fas fa-user-shield mr-2"></i>
+          Como coletamos, usamos e protegemos suas informações pessoais - Conformidade LGPD
         </p>
       </div>
     </section>

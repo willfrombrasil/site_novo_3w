@@ -4,13 +4,17 @@
     <section class="page-hero">
       <div class="container">
         <div class="breadcrumb">
-          <router-link to="/">Home</router-link>
+          <router-link to="/"><i class="fas fa-home mr-1"></i>Home</router-link>
           <ChevronRightIcon class="w-4 h-4 breadcrumb-separator" />
-          <span>Termos de Uso</span>
+          <span><i class="fas fa-file-contract mr-1"></i>Termos de Uso</span>
         </div>
-        <h1 class="page-hero-title">Termos de Uso</h1>
+        <h1 class="page-hero-title">
+          <i class="fas fa-gavel mr-3"></i>
+          Termos de Uso
+        </h1>
         <p class="page-hero-subtitle">
-          Condições gerais para utilização dos nossos serviços
+          <i class="fas fa-info-circle mr-2"></i>
+          Condições gerais para utilização dos nossos serviços - Conformidade LGPD
         </p>
       </div>
     </section>

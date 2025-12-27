@@ -463,42 +463,66 @@ body {
   @apply flex flex-col sm:flex-row gap-4 justify-center;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
+/* Responsive adjustments - Mobile First */
+@media (max-width: 640px) {
   .container {
     padding: 0 1rem;
   }
-  
+
   .section-padding {
-    padding: 3rem 0;
+    padding: 2rem 0;
   }
-  
+
   .hero-title {
-    font-size: 2.5rem;
-  }
-  
-  .hero-subtitle {
-    font-size: 1.125rem;
-  }
-  
-  .page-hero-title {
-    font-size: 2.5rem;
-  }
-  
-  .page-hero-subtitle {
-    font-size: 1.125rem;
-  }
-  
-  .section-title {
     font-size: 2rem;
+    line-height: 1.2;
   }
-  
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .page-hero-title {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .page-hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
   .whatsapp-float {
-    bottom: 20px;
-    right: 20px;
+    bottom: 15px;
+    right: 15px;
     width: 50px;
     height: 50px;
     font-size: 20px;
+  }
+
+  .btn-primary,
+  .btn-secondary,
+  .btn-outline,
+  .btn-info {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.875rem;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.125rem;
   }
 }
 
