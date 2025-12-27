@@ -4,14 +4,29 @@
     <section class="page-hero">
       <div class="container">
         <div class="breadcrumb">
-          <router-link to="/">Home</router-link>
+          <router-link to="/"><i class="fas fa-home mr-1"></i>Home</router-link>
           <ChevronRightIcon class="w-4 h-4 breadcrumb-separator" />
-          <span>Institucional</span>
+          <span><i class="fas fa-building mr-1"></i>Institucional</span>
         </div>
-        <h1 class="page-hero-title">3W Online</h1>
+        <h1 class="page-hero-title">
+          <i class="fas fa-medal text-yellow-300 mr-3"></i>
+          Grupo 3W Online
+        </h1>
         <p class="page-hero-subtitle">
+          <i class="fas fa-rocket mr-2"></i>
           Transformando negócios através da tecnologia e marketing digital desde 2019
         </p>
+        <div class="flex justify-center gap-4 mt-6 flex-wrap">
+          <span class="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-white text-sm font-medium" title="Certificados e reconhecimentos do mercado">
+            <i class="fas fa-award text-yellow-300 mr-2"></i>Certificações
+          </span>
+          <span class="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-white text-sm font-medium" title="Equipe especializada e comprometida">
+            <i class="fas fa-users text-blue-300 mr-2"></i>Time Especializado
+          </span>
+          <span class="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-white text-sm font-medium" title="Inovação constante em tecnologia">
+            <i class="fas fa-lightbulb text-green-300 mr-2"></i>Inovação
+          </span>
+        </div>
       </div>
     </section>
     
@@ -20,30 +35,60 @@
       <div class="container">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 class="section-title">Mais do que uma Agência de Marketing e Software</h2>
-            <p class="text-lg text-gray-600 mb-6">
-              No GRUPO 3W ONLINE, acreditamos que a inovação nasce da coragem de desafiar o convencional e explorar o novo. Nossa missão é impulsionar a mudança e oferecer ferramentas para gerar impacto duradouro. Somos uma força criativa, especializada em soluções digitais, com o compromisso de levar os negócios de nossos clientes a um novo patamar.
+            <h2 class="section-title">
+              <i class="fas fa-star text-primary-600 mr-2"></i>
+              Mais do que uma Agência
+            </h2>
+            <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-6 rounded-r-lg">
+              <p class="text-lg text-gray-800 font-semibold flex items-center gap-2">
+                <i class="fas fa-quote-left text-blue-400"></i>
+                <span>Somos <strong>parceiros estratégicos</strong> no crescimento do seu negócio</span>
+              </p>
+            </div>
+
+            <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+              <i class="fas fa-check-circle text-green-500 mr-2"></i>
+              No <strong>Grupo 3W Online</strong>, acreditamos que a inovação nasce da coragem de desafiar o convencional. Nossa missão é impulsionar a mudança e oferecer ferramentas para gerar <strong>impacto duradouro</strong>.
             </p>
-            <p class="text-lg text-gray-600 mb-8">
-              O Grupo 3W Online iniciou as atividades em 2020 com a missão de impulsionar o crescimento de empresas locais no ambiente digital. Desde então, temos conquistado resultados excepcionais para nossos clientes, construindo uma trajetória de sucesso marcada pela inovação e compromisso.
+
+            <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+              <i class="fas fa-chart-line text-blue-500 mr-2"></i>
+              Desde 2019, conquistamos resultados excepcionais para nossos clientes, construindo uma trajetória de sucesso marcada pela <strong>inovação e compromisso</strong>.
             </p>
-            <p class="text-lg text-gray-600 mb-8">
-              Nosso foco é oferecer soluções digitais eficientes, criando não apenas marcas, mas parcerias duradouras que geram resultados consistentes. Se você busca uma agência de marketing e software que vai além do convencional, a 3W Online é a escolha ideal para levar seu negócio ao próximo nível.
+
+            <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+              <i class="fas fa-handshake text-orange-500 mr-2"></i>
+              Criamos não apenas marcas, mas <strong>parcerias duradouras</strong> que geram resultados consistentes. Se você busca uma agência que vai além do convencional, a 3W Online é a escolha ideal!
             </p>
-            <p class="text-lg text-gray-600 mb-8">
-              Explore nosso site para conhecer nossos serviços e descobrir como podemos ajudá-lo a alcançar seus objetivos. Seja bem-vindo à nossa jornada de transformação digital!
-            </p>
-            
+
             <!-- Company Stats -->
             <div class="grid grid-cols-2 gap-6">
-              <div class="text-center">
-                <div class="text-3xl font-bold text-primary-600 mb-2">150+</div>
-                <div class="text-gray-600">Projetos Entregues</div>
+              <div class="text-center p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl shadow-lg border-t-4 border-blue-500">
+                <div class="text-4xl font-bold text-blue-600 mb-2">
+                  <i class="fas fa-trophy mr-2"></i>150+
+                </div>
+                <div class="text-gray-700 font-semibold">Projetos Entregues</div>
+                <p class="text-sm text-gray-500 mt-1">Com excelência</p>
               </div>
-              <div class="text-center">
-                <div class="text-3xl font-bold text-primary-600 mb-2">5+</div>
-                <div class="text-gray-600">Anos de Experiência</div>
+              <div class="text-center p-6 bg-gradient-to-br from-green-50 to-green-100 rounded-xl shadow-lg border-t-4 border-green-500">
+                <div class="text-4xl font-bold text-green-600 mb-2">
+                  <i class="fas fa-calendar-check mr-2"></i>5+
+                </div>
+                <div class="text-gray-700 font-semibold">Anos de Experiência</div>
+                <p class="text-sm text-gray-500 mt-1">No mercado</p>
               </div>
+            </div>
+
+            <div class="mt-8 flex justify-center">
+              <router-link
+                to="/contato"
+                class="btn-primary inline-flex items-center gap-2 shadow-xl hover:shadow-2xl transition-all"
+                title="Solicite uma proposta personalizada"
+              >
+                <i class="fas fa-rocket"></i>
+                Solicitar Proposta
+                <i class="fas fa-arrow-right"></i>
+              </router-link>
             </div>
           </div>
           
@@ -68,15 +113,16 @@
         
         <div class="space-y-12">
           <!-- Compromisso com Resultados -->
-          <div class="flex items-start space-x-6">
+          <div class="flex items-start space-x-6 bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
             <div class="flex-shrink-0">
-              <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center">
+              <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center animate-pulse">
                 <ChartBarIcon class="w-8 h-8 text-white" />
               </div>
             </div>
             <div class="flex-1">
               <h3 class="text-2xl font-bold text-gray-900 mb-4">
-                ✅ Compromisso com Resultados Tangíveis
+                <i class="fas fa-bullseye text-green-500 mr-2"></i>
+                Compromisso com Resultados Tangíveis
               </h3>
               <p class="text-lg text-gray-600">
                 Não nos contentamos com o "bom o suficiente". Aqui na 3W Online, nossa missão é impulsionar o sucesso de nossos clientes através de estratégias e campanhas que geram resultados reais e mensuráveis. Não apenas criamos anúncios bonitos, mas sim soluções que convertem e impulsionam o crescimento do seu negócio.

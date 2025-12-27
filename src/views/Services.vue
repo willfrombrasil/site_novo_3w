@@ -4,40 +4,80 @@
     <section class="page-hero">
       <div class="container">
         <div class="breadcrumb">
-          <router-link to="/">Home</router-link>
+          <router-link to="/"><i class="fas fa-home mr-1"></i>Home</router-link>
           <ChevronRightIcon class="w-4 h-4 breadcrumb-separator" />
-          <span>Serviços</span>
+          <span><i class="fas fa-briefcase mr-1"></i>Serviços</span>
         </div>
-        <h1 class="page-hero-title">Nossos Serviços</h1>
+        <h1 class="page-hero-title">
+          <i class="fas fa-gem text-yellow-300 mr-3"></i>
+          Soluções Digitais Completas
+        </h1>
         <p class="page-hero-subtitle">
-          Soluções completas em marketing digital e desenvolvimento para impulsionar seu negócio
+          <i class="fas fa-chart-line mr-2"></i>
+          Transforme seu negócio com nossas soluções em marketing digital, desenvolvimento e consultoria estratégica
         </p>
+        <div class="flex justify-center gap-4 mt-6 flex-wrap">
+          <span class="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-white text-sm font-medium animate-pulse" title="Planos personalizados para seu orçamento">
+            <i class="fas fa-tags text-green-300 mr-2"></i>Planos Flexíveis
+          </span>
+          <span class="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-white text-sm font-medium" title="Garantia de satisfação ou seu dinheiro de volta">
+            <i class="fas fa-shield-check text-blue-300 mr-2"></i>Garantia 100%
+          </span>
+          <span class="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-white text-sm font-medium" title="Suporte dedicado sempre que precisar">
+            <i class="fas fa-headset text-yellow-300 mr-2"></i>Suporte 24/7
+          </span>
+        </div>
       </div>
     </section>
     
     <!-- Services Grid -->
     <section class="section-padding py-16 my-16">
       <div class="container">
+        <div class="mb-12 text-center">
+          <div class="bg-gradient-to-r from-orange-50 to-yellow-50 p-6 rounded-2xl shadow-lg inline-block">
+            <p class="text-xl font-bold text-gray-900 mb-2">
+              <i class="fas fa-fire text-orange-500 mr-2 animate-pulse"></i>
+              Oferta Especial: <span class="text-orange-600">20% de Desconto</span> no Primeiro Mês!
+            </p>
+            <p class="text-gray-700">
+              <i class="fas fa-clock mr-2"></i>
+              Válido apenas para os <strong>próximos 5 clientes</strong> que fecharem hoje
+            </p>
+          </div>
+        </div>
+
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div
             v-for="service in services"
             :key="service.id"
-            class="service-card"
+            class="service-card group relative"
           >
-            <div class="feature-icon mb-6">
+            <div class="absolute -top-4 -right-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold shadow-lg animate-bounce">
+              <i class="fas fa-star mr-1"></i>Popular
+            </div>
+            <div class="feature-icon mb-6 group-hover:scale-110 transition-transform">
               <component :is="service.icon" />
             </div>
-            <h3 class="text-xl font-semibold text-gray-900 mb-3">{{ service.title }}</h3>
+            <h3 class="text-xl font-semibold text-gray-900 mb-3 flex items-center gap-2">
+              <i class="fas fa-check-circle text-green-500"></i>
+              {{ service.title }}
+            </h3>
             <p class="text-gray-600 mb-4">{{ service.description }}</p>
-            <div class="flex items-center justify-between mb-4">
-              <span class="text-sm text-gray-500">A partir de</span>
+            <div class="flex items-center justify-between mb-4 p-3 bg-blue-50 rounded-lg">
+              <span class="text-sm text-gray-600 flex items-center gap-1">
+                <i class="fas fa-tag"></i>
+                A partir de
+              </span>
               <span class="text-lg font-bold text-primary-600">{{ service.price }}</span>
             </div>
             <router-link
               :to="service.link"
-              class="btn-primary w-full text-center"
+              class="btn-primary w-full text-center inline-flex items-center justify-center gap-2 group-hover:shadow-xl transition-all"
+              :title="`Saiba mais sobre ${service.title}`"
             >
+              <i class="fas fa-info-circle"></i>
               Saiba Mais
+              <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
             </router-link>
           </div>
         </div>
@@ -53,31 +93,40 @@
         </div>
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div class="text-center">
-            <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <ClockIcon class="w-8 h-8 text-primary-600" />
+          <div class="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-2">
+            <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <ClockIcon class="w-8 h-8 text-white" />
             </div>
-            <h3 class="font-semibold text-gray-900 mb-2">Agilidade</h3>
-            <p class="text-gray-600">Entregamos projetos no prazo acordado com qualidade garantida</p>
+            <h3 class="font-semibold text-gray-900 mb-2 flex items-center justify-center gap-2">
+              <i class="fas fa-bolt text-yellow-500"></i>
+              Agilidade
+            </h3>
+            <p class="text-gray-600">Entregamos projetos no prazo acordado com <strong>qualidade garantida</strong></p>
           </div>
-          
-          <div class="text-center">
-            <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <CogIcon class="w-8 h-8 text-primary-600" />
+
+          <div class="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-2">
+            <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <CogIcon class="w-8 h-8 text-white" />
             </div>
-            <h3 class="font-semibold text-gray-900 mb-2">Personalização</h3>
-            <p class="text-gray-600">Soluções sob medida para cada necessidade e orçamento</p>
+            <h3 class="font-semibold text-gray-900 mb-2 flex items-center justify-center gap-2">
+              <i class="fas fa-puzzle-piece text-purple-500"></i>
+              Personalização
+            </h3>
+            <p class="text-gray-600">Soluções <strong>sob medida</strong> para cada necessidade e orçamento</p>
           </div>
-          
-          <div class="text-center">
-            <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <ChartBarIcon class="w-8 h-8 text-primary-600" />
+
+          <div class="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-2">
+            <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <ChartBarIcon class="w-8 h-8 text-white" />
             </div>
-            <h3 class="font-semibold text-gray-900 mb-2">Resultados</h3>
-            <p class="text-gray-600">Focamos em métricas que realmente impactam seu negócio</p>
+            <h3 class="font-semibold text-gray-900 mb-2 flex items-center justify-center gap-2">
+              <i class="fas fa-chart-line text-green-500"></i>
+              Resultados
+            </h3>
+            <p class="text-gray-600">Focamos em métricas que <strong>realmente impactam</strong> seu negócio</p>
           </div>
-          
-          <div class="text-center">
+
+          <div class="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-2">
             <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
               <UserGroupIcon class="w-8 h-8 text-primary-600" />
             </div>

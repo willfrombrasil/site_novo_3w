@@ -5,12 +5,15 @@
       <div class="container">
         <div class="header-content">
           <div class="promo-banner">
-            <span class="promo-icon">🎁</span>
+            <i class="fas fa-gift promo-icon animate-pulse"></i>
             <span class="promo-text">INDIQUE E GANHE</span>
-            <span class="promo-icon">⭐</span>
+            <i class="fas fa-star promo-icon"></i>
           </div>
           <div class="header-right">
-            <span class="header-subtitle">Convide amigos e ganhe créditos!</span>
+            <span class="header-subtitle">
+              <i class="fas fa-users mr-2"></i>
+              Convide amigos e ganhe créditos!
+            </span>
           </div>
         </div>
       </div>
@@ -30,11 +33,18 @@
               <div class="carousel-slide active">
                 <div class="slide-content">
                   <div class="slide-text">
-                    <h2 class="slide-title">Ganhe</h2>
+                    <h2 class="slide-title">
+                      <i class="fas fa-gift mr-2"></i>Ganhe
+                    </h2>
                     <p class="slide-subtitle">créditos!</p>
-                    <div class="slide-badge">Indique e Ganhe</div>
-                    <p class="slide-description">PROMOÇÃO ATIVA</p>
-                    <button class="slide-cta" @click="openWhatsApp('indique')">
+                    <div class="slide-badge">
+                      <i class="fas fa-users mr-2"></i>Indique e Ganhe
+                    </div>
+                    <p class="slide-description">
+                      <i class="fas fa-fire mr-2 animate-pulse"></i>PROMOÇÃO ATIVA
+                    </p>
+                    <button class="slide-cta" @click="openWhatsApp('indique')" title="Indicar e ganhar créditos agora">
+                      <i class="fas fa-paper-plane mr-2"></i>
                       Indicar agora
                     </button>
                   </div>
@@ -146,8 +156,15 @@
               <h3 class="tool-title">{{ tool.name }}</h3>
               <p class="tool-subtitle">{{ tool.subtitle }}</p>
               <p class="tool-description">{{ tool.description }}</p>
-              <a :href="tool.link" target="_blank" class="tool-cta">
-          Acessar
+              <a
+                :href="tool.link"
+                target="_blank"
+                class="tool-cta"
+                :title="`Acessar ${tool.name}`"
+                rel="noopener noreferrer"
+              >
+                <i class="fas fa-external-link-alt mr-2"></i>
+                Acessar
               </a>
             </div>
           </div>
